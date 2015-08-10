@@ -2,20 +2,51 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>freeboard</title>
+    <title>{{title}}</title>
 	<meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content = "width = device-width, initial-scale = 1, user-scalable = no" />
-    <link href="lib/freeboard/css/freeboard.min.css" rel="stylesheet" />
-    <script src="lib/freeboard/js/freeboard.thirdparty.min.js"></script>
+    <link href="lib/freeboard/lib/css/thirdparty/jquery.gridster.min.css" rel="stylesheet" />
+    <link href="lib/freeboard/lib/css/freeboard/styles.css" rel="stylesheet" />
+    <script src="lib/freeboard/lib/js/thirdparty/head.js"></script>
     <script type="text/javascript">
-        head.js("lib/freeboard/js/freeboard+plugins.min.js",
+        head.js("lib/freeboard/lib/js/thirdparty/knockout.js",
+                "lib/freeboard/lib/js/thirdparty/jquery.js",
+                "lib/freeboard/lib/js/thirdparty/jquery-ui.js",
+                "lib/freeboard/lib/js/thirdparty/underscore.js",
+                "lib/freeboard/lib/js/thirdparty/jquery.gridster.js",
+                "lib/freeboard/lib/js/thirdparty/jquery.caret.js",
+
+                "lib/freeboard/plugins/thirdparty/justgage.1.0.1.js",
+                "lib/freeboard/plugins/thirdparty/jquery.sparkline.min.js",
+                "lib/freeboard/plugins/thirdparty/raphael.2.1.0.min.js",
+
+                "lib/freeboard/lib/js/freeboard/FreeboardModel.js",
+                "lib/freeboard/lib/js/freeboard/DatasourceModel.js",
+                "lib/freeboard/lib/js/freeboard/PaneModel.js",
+                "lib/freeboard/lib/js/freeboard/WidgetModel.js",
+                "lib/freeboard/lib/js/freeboard/FreeboardUI.js",
+                "lib/freeboard/lib/js/freeboard/DialogBox.js",
+                "lib/freeboard/lib/js/freeboard/PluginEditor.js",
+                "lib/freeboard/lib/js/freeboard/ValueEditor.js",
+                "lib/freeboard/lib/js/freeboard/JSEditor.js",
+                "lib/freeboard/lib/js/freeboard/DeveloperConsole.js",
+                "lib/freeboard/lib/js/freeboard/freeboard.js",
+
+                "lib/freeboard/plugins/freeboard/freeboard.datasources.js",
+                "lib/freeboard/plugins/freeboard/freeboard.widgets.js",
+                "lib/freeboard/examples/plugin_example.js",
+
                 // *** Load more plugins here ***
                 function(){
                     $(function()
                     { //DOM Ready
                         freeboard.initialize(true);
+                        freeboard.newDashboard();
+                        freeboard.loadDashboard(
+                        	{{dashboard | json | safe }} || {}
+                        );
                     });
                 });
     </script>

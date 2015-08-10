@@ -1,11 +1,15 @@
 'use strict';
 
+var path = require('path');
+var config = require(path.resolve('config/config'));
+
 /**
  * Render the main application page
  */
 exports.renderIndex = function (req, res) {
   res.render('modules/core/server/views/index', {
-    user: req.user || null
+    user: req.user || null,
+    dashboard: config.dashboard
   });
 };
 

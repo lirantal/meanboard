@@ -3,6 +3,9 @@
 module.exports = function (app) {
   // Root routing
   var core = require('../controllers/core.server.controller');
+  var dashboard = require('../controllers/dashboard.server.controller');
+
+  app.route('/api/test').get(dashboard.randomInt);
 
   // Define error pages
   app.route('/server-error').get(core.renderServerError);
