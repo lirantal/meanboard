@@ -12,6 +12,9 @@ MEANboard is an open source dashboard framework starter-kit project based on [Fr
 * Freeboard is a UI frontend framework for Dashboards which provides the JavaScript infrastructure for generating a dashboard layout, widgets, and polling for information from the client side to remote APIs.
 * MEAN.JS is the open source MEAN stack framework for developing JavaScript based apps on-top of NodeJS, ExpressJS, AngularJS, and MongoDB. This project doesn't actually make use of the AngularJS part because it uses Freeboard.
 
+### Example view for the MEANboard:
+![image](https://cloud.githubusercontent.com/assets/316371/9605453/77964194-50c6-11e5-85d2-6f2461402363.png)
+
 
 ## Prerequisites
 Make sure you have installed all of the following prerequisites on your development machine:
