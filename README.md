@@ -72,6 +72,29 @@ If you encounter any problems, try the Troubleshooting section.
 * explore `config/env/development.js` for development environment configuration options
 
 
+## Customizing
+
+### Freeboard as a library
+MEAN.JS utilizes the Freeboard project by requiring it as part of the depenencies for bower when it's installing. So basically this means that Freeboard is just another UI library that is installed into the public/lib/ folder.
+To view this dependency you can refer to the bower.json file and find the following
+```javascript
+"freeboard": "https://github.com/Freeboard/freeboard.git"
+```
+
+### Freeboard HTML page customization
+The MEANboard project simply copies the index-dev.html version of the Freeboard project into the server-side view located at modules/core/server/views/index.server.view.html
+
+That static HTML page is served by the controller at modules/core/server/controllers/core.server.controller.js
+
+### Adding Widgets
+
+#### Defining the routes for the widgets
+Routes for the widgets are defined on the server-side routing at modules/core/server/routes/core.server.routes.js
+Controllers for the routes are defined at modules/core/server/controllers/dashboard.server.controller.js
+
+#### Freeboard widgets through the UI
+
+
 ## Support
 
 This project is based on the master 0.4 version of MEAN.JS.
