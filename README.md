@@ -3,7 +3,7 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/lirantal/meanboardn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Master Branch: 
-[![Build Status](https://travis-ci.org/lirantal/meanboard.svg?branch=master)](https://travis-ci.org/lirantal/meanboard)
+<a href="https://github.com/lirantal/meanboard/actions/workflows/ci.yml"><img src="https://github.com/lirantal/meanboard/actions/workflows/ci.yml/badge.svg?branch=master" alt="build"/></a>
 [![Dependencies Status](https://david-dm.org/lirantal/meanboard.svg)](https://david-dm.org/lirantal/meanboard)
 
 ## About MEANboard

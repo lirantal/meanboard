@@ -16,7 +16,12 @@
   "scripts": {
     "start": "grunt",
     "test": "grunt test",
-    "postinstall": "bower install --config.interactive=false"
+    "postinstall": "bower install --config.interactive=false",
+    "lint": "echo \"No lint step configured\"",
+    "build": "echo \"No build step configured\"",
+    "lint:markdown": "markdownlint -c .github/.markdownlint.yml '**/**.md'",
+    "version": "changeset version",
+    "release": "changeset publish"
   },
   "dependencies": {
     "acl": "~0.4.4",
@@ -103,7 +108,10 @@
     "load-grunt-tasks": "^3.2.0",
     "run-sequence": "^1.1.1",
     "should": "^7.0.1",
-    "supertest": "^1.0.1"
+    "supertest": "^1.0.1",
+    "@changesets/changelog-github": "^0.6.0",
+    "@changesets/cli": "^2.31.0",
+    "markdownlint-cli": "0.45.0"
   },
   "publishConfig": {
     "provenance": true,
