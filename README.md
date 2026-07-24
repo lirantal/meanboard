@@ -4,7 +4,6 @@
 
 Master Branch: 
 <a href="https://github.com/lirantal/meanboard/actions/workflows/ci.yml"><img src="https://github.com/lirantal/meanboard/actions/workflows/ci.yml/badge.svg?branch=master" alt="build"/></a>
-[![Dependencies Status](https://david-dm.org/lirantal/meanboard.svg)](https://david-dm.org/lirantal/meanboard)
 
 ## About MEANboard
 
