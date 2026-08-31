@@ -39,7 +39,7 @@
     "forever": "~4.0.3",
     "glob": "^13.0.6",
     "grunt-cli": "~1.5.0",
-    "grunt": "1.6.2",
+    "grunt": "1.6.3",
     "helmet": "~8.3.0",
     "jasmine-core": "^6.3.0",
     "lodash": "^4.18.1",
