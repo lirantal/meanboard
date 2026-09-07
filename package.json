@@ -44,7 +44,7 @@
     "jasmine-core": "^6.3.0",
     "lodash": "^4.18.1",
     "method-override": "^3.0.0",
-    "mocha": "~11.7.6",
+    "mocha": "~11.8.0",
     "mongoose": "^9.7.1",
     "morgan": "^1.6.1",
     "multer": "2.2.0",
