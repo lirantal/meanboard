@@ -47,7 +47,7 @@
     "mocha": "~11.8.0",
     "mongoose": "^9.7.1",
     "morgan": "^1.6.1",
-    "multer": "2.2.0",
+    "multer": "2.3.0",
     "node-pre-gyp": "0.17.0",
     "nodemailer": "^9.0.1",
     "passport": "~0.7.0",
